@@ -1,1 +1,5 @@
-console.log("Alo Mundo")
+function alo(){
+    console.log("Alo Mundo")
+}
+
+alo()
