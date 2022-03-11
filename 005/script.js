@@ -1,8 +1,9 @@
 //Faça um Programa que converta metros para centímetros.
-function mtsParaCm(mts){
-    let cm
+function mtsParaCm(){
+    let mts, cm
+    mts = document.querySelector("#metros").value
+    mts = parseFloat(mts)
     cm = mts*100
-    console.log(mts,"metros convertidos são",cm,"cm.")
+    document.querySelector("#centimetros").innerHTML = "Convertido para cm:" + cm
 }
 
-mtsParaCm(56)

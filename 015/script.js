@@ -1,10 +1,11 @@
 //Estrutura de decisão
-function idade(idade){
+function idadeDirigir(){
+    let idade
+    idade = document.querySelector("#idade").value
     if(idade>=18){
-        console.log("você é maior de idade, ja pode dirigir.")
+        document.querySelector("#resposta").innerHTML = "você é maior de idade, ja pode dirigir."
     } else{
-        console.log("Você não pode dirigir ainda.")
+        document.querySelector("#resposta").innerHTML = "Você não pode dirigir ainda."
     }
 }
 
-idade(19)

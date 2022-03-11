@@ -1,8 +1,8 @@
 //Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
-function raio(raio){
-    let area
+function calculoRaio(){
+    let area, raio
+    raio = document.querySelector("#r").value
+    raio = parseFloat(raio)
     area = 3.14 * raio^2
-    console.log("A área desse círculo é de:",area)
+    document.querySelector("#resultado").innerHTML = "A área desse círculo é: " + area
 }
-
-raio(12)
